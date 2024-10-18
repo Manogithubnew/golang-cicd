@@ -6,10 +6,10 @@ pipeline {
       go 'golang'
    }
    environment {
-       DOCKERHUB_CREDENTIALS = credentials('dockerhub')
-       DOCKER_IMAGE = 'ephraimaudu/test-app'
-       GITHUB_CREDENTIALS = 'git-secret'
-       SONAR_TOKEN = credentials('SONAR_TOKEN')
+       DOCKERHUB_CREDENTIALS = credentials('doocker-hub-credential')
+       DOCKER_IMAGE = 'mrt/golang-app'
+       GITHUB_CREDENTIALS = 'github'
+       SONAR_TOKEN = credentials('sonartoken')
    }
 
 

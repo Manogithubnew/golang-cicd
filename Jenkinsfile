@@ -1,7 +1,5 @@
 pipeline {
    agent any
-
-
    tools {
       go '1.23.2'
    }

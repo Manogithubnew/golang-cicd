@@ -3,7 +3,7 @@ pipeline {
 
 
    tools {
-      go 'golang'
+      go '1.23.2'
    }
    environment {
        DOCKERHUB_CREDENTIALS = credentials('doocker-hub-credential')
